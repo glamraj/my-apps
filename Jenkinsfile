@@ -1,6 +1,6 @@
 node{  
     
-    stage('Introduction'){
+    stage('Introductio'){
     echo 'Hello-- Welcome to Pipeline Demo'
   }
     
