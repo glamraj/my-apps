@@ -1,4 +1,5 @@
 properties([pipelineTriggers([pollSCM('')])])
+
 node{  
     
     stage('Introduction'){
