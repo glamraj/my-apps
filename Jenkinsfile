@@ -1,7 +1,7 @@
 node{  
     
     stage('Intro'){
-    echo 'Hello-- Welcome to Pipeline Demo :)'
+    echo 'Hello-- Welcome to Pipeline Demo'
   }
     
     stage('SCM Checkout'){
