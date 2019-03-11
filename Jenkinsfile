@@ -8,6 +8,7 @@ node{
     
     stage('SCM Checkout'){
     git 'https://github.com/javahometech/my-app'
+        branch: "${params.gitBranch}"
   }
 
     stage('Maven Build'){ 
