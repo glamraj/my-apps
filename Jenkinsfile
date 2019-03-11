@@ -7,8 +7,9 @@ node{
   }
     
     stage('SCM Checkout'){
-    git 'https://github.com/javahometech/my-app',
-        branch: "${params.gitBranch}"
+ git credentialsId: 'github', 
+		    url: 'https://github.com/glamraj/my-apps',
+			branch: "${params.gitBranch}"
   }
 
     stage('Maven Build'){ 
