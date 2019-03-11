@@ -14,7 +14,7 @@ node{
   }
     
     stage('JUnit Publisher'){ 
-    junit allowEmptyResults: true, testResults: 'pipeline-demo/target/surefire-reports/*.xml'
+    junit allowEmptyResults: true, testResults: '/var/lib/jenkins/workspace/pipeline-demo/target/surefire-reports/**.xml'
   }
     
 }
