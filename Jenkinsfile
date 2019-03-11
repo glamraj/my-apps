@@ -13,4 +13,8 @@ node{
     sh label: '', script: 'mvn clean package'
   }
     
+    stage('JUnit Publisher'){ 
+    junit '/var/lib/jenkins/workspace/pipeline-demo/target/surefire-reports/*.xml'
+  }
+    
 }
