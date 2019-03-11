@@ -7,9 +7,7 @@ node{
   }
     
     stage('SCM Checkout'){
- git credentialsId: 'DockerHub-dockerglam', 
-		    url: 'https://github.com/glamraj/my-apps',
-			branch: "${params.gitBranch}"
+    git 'https://github.com/glamraj/my-apps.git'
   }
 
     stage('Maven Build'){ 
