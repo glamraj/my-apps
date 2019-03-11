@@ -8,5 +8,9 @@ node{
     git 'https://github.com/javahometech/my-app'
   }
 
+    stage('Maven Build'){ 
+    tool name: 'M2', type: 'maven'
+    sh label: '', script: 'mvn clean package'
+  }
     
 }
